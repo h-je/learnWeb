@@ -304,6 +304,7 @@
   max-width: calc(100% - 32px);
   min-height: 200px;
   position: relative;
+  animation: modalFadeIn ease 0.39s;
 }
 .modal-header{
   background: #009688;
@@ -341,6 +342,7 @@
   border: 1px solid #ccc;
   width: 100%;
   font-size: 15px;
+  height: 30px;
   margin-bottom: 24px;
 }
 #btn-tickets {
@@ -363,4 +365,14 @@
 }
 .modal-footer a{
   color: #2196F3;
+}
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-100px);
+  }
+  to{
+    transform: translateY(0);
+
+  }
+  
 }
