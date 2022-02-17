@@ -124,9 +124,9 @@
     <div id="footer">
 
     </div>
-  <div class="modal">
+  <div class="modal js-modal">
     <div class="modal-container">
-      <div class="modal-close">
+      <div class="modal-close js-modal-close">
         <i class="ti-close"></i>
       </div>  
       <header class="modal-header">
@@ -158,15 +158,25 @@
 
   <script>
     const buyBtns = document.querySelectorAll('.js-buy-ticket')
-    
+    const modal = document.querySelector('.js-modal')
+    const modalClose =document.querySelector('.js-modal-close')
+    // hien thi modal mua ve
     function showBuyTickets(){
-      
-
+      modal.classList.add('open')
     }
 
+    // an modal mua ve
+    function hideBuyTickets(){
+      modal.classList.remove('open')
+    }
+
+    // lang nghe su kien hien phieu mua 
     for (const btnBtn of buyBtns) {
       btnBtn.addEventListener('click', showBuyTickets )
     }
+
+    // lang nghe viec tat close
+    modal.addEventListener('click', hideBuyTickets)
   </script>
   </div>
 </body>
