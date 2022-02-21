@@ -302,16 +302,19 @@
   margin-top: 15px;
   line-height: 1.4;
 }
-.s-full-width{
+.btn{
   color: #fff;
   background-color: #000;
   text-decoration: none;
   padding: 11px 16px;
   display: inline-block;
   margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  
 }
 
-.s-full-width:hover{
+.btn:hover{
   background-color: #ccc;
   color: #000;
 }
@@ -327,6 +330,7 @@
 
 .contact-info i[class*="ti-"] {
   width: 30px;
+  display: inline-block;
 }
 
 .contact-form{
@@ -341,13 +345,6 @@
   /* outline: none ; */
 }
 
-.contact-form .form-submit-btn{
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #000;
-  padding: 10px 16px;
-  float: right;
-}
 
 /* Footer */
 #footer{
