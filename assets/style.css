@@ -37,8 +37,9 @@
   cursor: pointer;
 }
 
-#html{
+html{
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .row{
